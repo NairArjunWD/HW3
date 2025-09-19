@@ -1,0 +1,92 @@
+body {
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1rem 3rem;
+  color: #111;
+  background: #fff;
+}
+
+p {
+  font-family: Helvetica, Calibri, Arial, sans-serif;
+}
+
+img {
+  float: right;
+  margin-left: 15px; /* Adds space between the image and the text */
+}
+
+/* Headings */
+h1, h2, h3{
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(130, 26, 130);
+}
+
+/* Links */
+a:link { color: red; }
+a:visited { color: purple; }
+a:hover { text-decoration: underline; }
+a:active { opacity: 0.8; }
+
+/* Buttons (submit) */
+input[type="submit"] {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  cursor: pointer;
+}
+input[type="submit"]:hover { background: red; color: #fff; }
+input[type="submit"]:active { background: green; color: #fff; }
+
+/* Lists */
+ul { list-style-type: square; }
+ol { list-style-type: upper-roman; }
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  font-size: 1rem;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
+}
+tr:nth-child(even) { background-color: #f2f2f2; }        /* even row light gray */
+tr:hover { background-color: #dbeafe; }                   /* any row hover light blue */
+thead th {
+  background: #f7f7f7;
+}
+
+/* Horizontal rule (shadow line) */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0));
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  margin: 1rem 0 1.5rem;
+}
+
+/* Layout helpers */
+.nav {
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+.section {
+  margin: 2rem 0;
+}

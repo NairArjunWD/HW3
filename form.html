@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arjun Nair</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="nav">
+      <a href="index.html">← Back to Intro</a>
+      <a href="form.html">Form</a>
+    </nav>
+
+    <h2>Contact Us</h2> 
+    <h4>We’d love to hear from you</h4>
+
+    <form>
+      <p>
+        <label for="name">Full Name</label><br />
+        <input type="text" id="name" name="name" placeholder="Caesar Agustus " required />
+      </p>
+
+      <p>
+        <label for="pwd">Create Password</label><br />
+        <input type="password" id="pwd" name="pwd" minlength="8" required />
+      </p>
+
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label><input type="radio" name="contact_method" value="email" checked /> Email</label><br />
+        <label><input type="radio" name="contact_method" value="phone" /> Phone</label><br />
+        <label><input type="radio" name="contact_method" value="chat" /> Chat</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Subscribe to</legend>
+        <label><input type="checkbox" name="subs_news" /> News & Updates </label><br />
+        <label><input type="checkbox" name="subs_offers" /> Promotions </label>
+      </fieldset>
+
+      <p>
+        <label for="interests">Topic of Contact</label><br />
+        <select id="interests" name="interests" multiple size="4">
+          <option value="">AI</option>
+          <option value="">Prototype</option>
+          <option value="">Logistics</option>
+          <option value="">Billing</option>
+          <option value="">QA</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="date">Scedule Meeting Date</label><br />
+        <input type="date" id="date" name="date" required />
+      </p>
+
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </div>
+</body>
+</html>
