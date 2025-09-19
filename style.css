@@ -19,12 +19,12 @@ img {
 /* Headings */
 h1, h2, h3{
   font-family: "Courier New", Courier, monospace;
-  color: rgb(130, 26, 130);
+  color:red;
 }
 
 /* Links */
-a:link { color: red; }
-a:visited { color: purple; }
+a:link { color: green; }
+a:visited { color: red; }
 a:hover { text-decoration: underline; }
 a:active { opacity: 0.8; }
 
